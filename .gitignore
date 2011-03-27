@@ -1,0 +1,5 @@
+# Build folder
+build
+
+# User-specific files
+*.pbxuser
