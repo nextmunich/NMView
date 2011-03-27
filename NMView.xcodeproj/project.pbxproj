@@ -1,0 +1,1119 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* NMViewAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* NMViewAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		43916EA8133FEAB300E41540 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43F01DE711D37F8A001C4390 /* MainWindow.xib */; };
+		43916EA9133FEAB300E41540 /* LoadFromCodeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43AC33D0133FE98A002C3384 /* LoadFromCodeController.xib */; };
+		43916EAA133FEAB300E41540 /* LoadFromNIBController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43AC33D6133FE98A002C3384 /* LoadFromNIBController.xib */; };
+		43916EAB133FEAB300E41540 /* LoadFromNIBView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43AC33DA133FE98A002C3384 /* LoadFromNIBView.xib */; };
+		43916EAC133FEAB300E41540 /* LayoutSupportController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43AC33DE133FE98A002C3384 /* LayoutSupportController.xib */; };
+		43916EAD133FEAB300E41540 /* TestLayoutsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43AC33E1133FE98A002C3384 /* TestLayoutsView.xib */; };
+		43916EAE133FEAB300E41540 /* AutomaticLayoutChangesController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43AC33E5133FE98A002C3384 /* AutomaticLayoutChangesController.xib */; };
+		43916EAF133FEAB300E41540 /* AutomaticLayoutChangesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43AC33E8133FE98A002C3384 /* AutomaticLayoutChangesView.xib */; };
+		43916EB0133FEAB300E41540 /* ViewTemplatesController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43AC33EC133FE98A002C3384 /* ViewTemplatesController.xib */; };
+		43916EB1133FEAB300E41540 /* ViewTemplatesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43AC33F0133FE98A002C3384 /* ViewTemplatesView.xib */; };
+		43916EB3133FEAB300E41540 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		43916EB4133FEAB300E41540 /* NMViewAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* NMViewAppDelegate.m */; };
+		43916EB5133FEAB300E41540 /* UIImage+NMNSCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33BA133FE95D002C3384 /* UIImage+NMNSCoding.m */; };
+		43916EB6133FEAB300E41540 /* UIView+NMTemplating.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33BC133FE95D002C3384 /* UIView+NMTemplating.m */; };
+		43916EB7133FEAB300E41540 /* NMViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33BF133FE95D002C3384 /* NMViewLayout.m */; };
+		43916EB8133FEAB300E41540 /* NMViewLayoutOmitSubviewsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33C1133FE95D002C3384 /* NMViewLayoutOmitSubviewsView.m */; };
+		43916EB9133FEAB300E41540 /* NMViewLayoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33C3133FE95D002C3384 /* NMViewLayoutView.m */; };
+		43916EBA133FEAB300E41540 /* NMView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33C5133FE95D002C3384 /* NMView.m */; };
+		43916EBB133FEAB300E41540 /* LoadFromCodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33CF133FE98A002C3384 /* LoadFromCodeController.m */; };
+		43916EBC133FEAB300E41540 /* LoadFromCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33D2133FE98A002C3384 /* LoadFromCodeView.m */; };
+		43916EBD133FEAB300E41540 /* LoadFromNIBController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33D5133FE98A002C3384 /* LoadFromNIBController.m */; };
+		43916EBE133FEAB300E41540 /* LoadFromNIBView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33D9133FE98A002C3384 /* LoadFromNIBView.m */; };
+		43916EBF133FEAB300E41540 /* LayoutSupportController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33DD133FE98A002C3384 /* LayoutSupportController.m */; };
+		43916EC0133FEAB300E41540 /* TestLayoutsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33E0133FE98A002C3384 /* TestLayoutsView.m */; };
+		43916EC1133FEAB300E41540 /* AutomaticLayoutChangesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33E4133FE98A002C3384 /* AutomaticLayoutChangesController.m */; };
+		43916EC2133FEAB300E41540 /* AutomaticLayoutChangesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33E7133FE98A002C3384 /* AutomaticLayoutChangesView.m */; };
+		43916EC3133FEAB300E41540 /* ViewTemplatesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33EB133FE98A002C3384 /* ViewTemplatesController.m */; };
+		43916EC4133FEAB300E41540 /* ViewTemplatesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33EF133FE98A002C3384 /* ViewTemplatesView.m */; };
+		43916EC6133FEAB300E41540 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		43916EC7133FEAB300E41540 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		43916EC8133FEAB300E41540 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		43916EC9133FEAB300E41540 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43BABA4F1281D99600F8445F /* StoreKit.framework */; };
+		43916ECA133FEAB300E41540 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43BABA531281D99F00F8445F /* CoreLocation.framework */; };
+		43916ECB133FEAB300E41540 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43BABA5E1281DA8B00F8445F /* SystemConfiguration.framework */; };
+		43916EDE133FEAF100E41540 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43F01DE711D37F8A001C4390 /* MainWindow.xib */; };
+		43916EDF133FEAF100E41540 /* LoadFromCodeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43AC33D0133FE98A002C3384 /* LoadFromCodeController.xib */; };
+		43916EE0133FEAF100E41540 /* LoadFromNIBController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43AC33D6133FE98A002C3384 /* LoadFromNIBController.xib */; };
+		43916EE1133FEAF100E41540 /* LoadFromNIBView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43AC33DA133FE98A002C3384 /* LoadFromNIBView.xib */; };
+		43916EE2133FEAF100E41540 /* LayoutSupportController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43AC33DE133FE98A002C3384 /* LayoutSupportController.xib */; };
+		43916EE3133FEAF100E41540 /* TestLayoutsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43AC33E1133FE98A002C3384 /* TestLayoutsView.xib */; };
+		43916EE4133FEAF100E41540 /* AutomaticLayoutChangesController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43AC33E5133FE98A002C3384 /* AutomaticLayoutChangesController.xib */; };
+		43916EE5133FEAF100E41540 /* AutomaticLayoutChangesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43AC33E8133FE98A002C3384 /* AutomaticLayoutChangesView.xib */; };
+		43916EE6133FEAF100E41540 /* ViewTemplatesController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43AC33EC133FE98A002C3384 /* ViewTemplatesController.xib */; };
+		43916EE7133FEAF100E41540 /* ViewTemplatesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43AC33F0133FE98A002C3384 /* ViewTemplatesView.xib */; };
+		43916EE9133FEAF100E41540 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		43916EEA133FEAF100E41540 /* NMViewAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* NMViewAppDelegate.m */; };
+		43916EEB133FEAF100E41540 /* UIImage+NMNSCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33BA133FE95D002C3384 /* UIImage+NMNSCoding.m */; };
+		43916EEC133FEAF100E41540 /* UIView+NMTemplating.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33BC133FE95D002C3384 /* UIView+NMTemplating.m */; };
+		43916EED133FEAF100E41540 /* NMViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33BF133FE95D002C3384 /* NMViewLayout.m */; };
+		43916EEE133FEAF100E41540 /* NMViewLayoutOmitSubviewsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33C1133FE95D002C3384 /* NMViewLayoutOmitSubviewsView.m */; };
+		43916EEF133FEAF100E41540 /* NMViewLayoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33C3133FE95D002C3384 /* NMViewLayoutView.m */; };
+		43916EF0133FEAF100E41540 /* NMView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33C5133FE95D002C3384 /* NMView.m */; };
+		43916EF1133FEAF100E41540 /* LoadFromCodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33CF133FE98A002C3384 /* LoadFromCodeController.m */; };
+		43916EF2133FEAF100E41540 /* LoadFromCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33D2133FE98A002C3384 /* LoadFromCodeView.m */; };
+		43916EF3133FEAF100E41540 /* LoadFromNIBController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33D5133FE98A002C3384 /* LoadFromNIBController.m */; };
+		43916EF4133FEAF100E41540 /* LoadFromNIBView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33D9133FE98A002C3384 /* LoadFromNIBView.m */; };
+		43916EF5133FEAF100E41540 /* LayoutSupportController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33DD133FE98A002C3384 /* LayoutSupportController.m */; };
+		43916EF6133FEAF100E41540 /* TestLayoutsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33E0133FE98A002C3384 /* TestLayoutsView.m */; };
+		43916EF7133FEAF100E41540 /* AutomaticLayoutChangesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33E4133FE98A002C3384 /* AutomaticLayoutChangesController.m */; };
+		43916EF8133FEAF100E41540 /* AutomaticLayoutChangesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33E7133FE98A002C3384 /* AutomaticLayoutChangesView.m */; };
+		43916EF9133FEAF100E41540 /* ViewTemplatesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33EB133FE98A002C3384 /* ViewTemplatesController.m */; };
+		43916EFA133FEAF100E41540 /* ViewTemplatesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33EF133FE98A002C3384 /* ViewTemplatesView.m */; };
+		43916EFC133FEAF100E41540 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		43916EFD133FEAF100E41540 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		43916EFE133FEAF100E41540 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		43916EFF133FEAF100E41540 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43BABA4F1281D99600F8445F /* StoreKit.framework */; };
+		43916F00133FEAF100E41540 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43BABA531281D99F00F8445F /* CoreLocation.framework */; };
+		43916F01133FEAF100E41540 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43BABA5E1281DA8B00F8445F /* SystemConfiguration.framework */; };
+		43916F0C133FEB1900E41540 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43F01DE711D37F8A001C4390 /* MainWindow.xib */; };
+		43916F0D133FEB1900E41540 /* LoadFromCodeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43AC33D0133FE98A002C3384 /* LoadFromCodeController.xib */; };
+		43916F0E133FEB1900E41540 /* LoadFromNIBController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43AC33D6133FE98A002C3384 /* LoadFromNIBController.xib */; };
+		43916F0F133FEB1900E41540 /* LoadFromNIBView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43AC33DA133FE98A002C3384 /* LoadFromNIBView.xib */; };
+		43916F10133FEB1900E41540 /* LayoutSupportController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43AC33DE133FE98A002C3384 /* LayoutSupportController.xib */; };
+		43916F11133FEB1900E41540 /* TestLayoutsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43AC33E1133FE98A002C3384 /* TestLayoutsView.xib */; };
+		43916F12133FEB1900E41540 /* AutomaticLayoutChangesController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43AC33E5133FE98A002C3384 /* AutomaticLayoutChangesController.xib */; };
+		43916F13133FEB1900E41540 /* AutomaticLayoutChangesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43AC33E8133FE98A002C3384 /* AutomaticLayoutChangesView.xib */; };
+		43916F14133FEB1900E41540 /* ViewTemplatesController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43AC33EC133FE98A002C3384 /* ViewTemplatesController.xib */; };
+		43916F15133FEB1900E41540 /* ViewTemplatesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43AC33F0133FE98A002C3384 /* ViewTemplatesView.xib */; };
+		43916F17133FEB1900E41540 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		43916F18133FEB1900E41540 /* NMViewAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* NMViewAppDelegate.m */; };
+		43916F19133FEB1900E41540 /* UIImage+NMNSCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33BA133FE95D002C3384 /* UIImage+NMNSCoding.m */; };
+		43916F1A133FEB1900E41540 /* UIView+NMTemplating.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33BC133FE95D002C3384 /* UIView+NMTemplating.m */; };
+		43916F1B133FEB1900E41540 /* NMViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33BF133FE95D002C3384 /* NMViewLayout.m */; };
+		43916F1C133FEB1900E41540 /* NMViewLayoutOmitSubviewsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33C1133FE95D002C3384 /* NMViewLayoutOmitSubviewsView.m */; };
+		43916F1D133FEB1900E41540 /* NMViewLayoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33C3133FE95D002C3384 /* NMViewLayoutView.m */; };
+		43916F1E133FEB1900E41540 /* NMView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33C5133FE95D002C3384 /* NMView.m */; };
+		43916F1F133FEB1900E41540 /* LoadFromCodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33CF133FE98A002C3384 /* LoadFromCodeController.m */; };
+		43916F20133FEB1900E41540 /* LoadFromCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33D2133FE98A002C3384 /* LoadFromCodeView.m */; };
+		43916F21133FEB1900E41540 /* LoadFromNIBController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33D5133FE98A002C3384 /* LoadFromNIBController.m */; };
+		43916F22133FEB1900E41540 /* LoadFromNIBView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33D9133FE98A002C3384 /* LoadFromNIBView.m */; };
+		43916F23133FEB1900E41540 /* LayoutSupportController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33DD133FE98A002C3384 /* LayoutSupportController.m */; };
+		43916F24133FEB1900E41540 /* TestLayoutsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33E0133FE98A002C3384 /* TestLayoutsView.m */; };
+		43916F25133FEB1900E41540 /* AutomaticLayoutChangesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33E4133FE98A002C3384 /* AutomaticLayoutChangesController.m */; };
+		43916F26133FEB1900E41540 /* AutomaticLayoutChangesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33E7133FE98A002C3384 /* AutomaticLayoutChangesView.m */; };
+		43916F27133FEB1900E41540 /* ViewTemplatesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33EB133FE98A002C3384 /* ViewTemplatesController.m */; };
+		43916F28133FEB1900E41540 /* ViewTemplatesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33EF133FE98A002C3384 /* ViewTemplatesView.m */; };
+		43916F2A133FEB1900E41540 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		43916F2B133FEB1900E41540 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		43916F2C133FEB1900E41540 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		43916F2D133FEB1900E41540 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43BABA4F1281D99600F8445F /* StoreKit.framework */; };
+		43916F2E133FEB1900E41540 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43BABA531281D99F00F8445F /* CoreLocation.framework */; };
+		43916F2F133FEB1900E41540 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43BABA5E1281DA8B00F8445F /* SystemConfiguration.framework */; };
+		43916F3A133FEB4300E41540 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43F01DE711D37F8A001C4390 /* MainWindow.xib */; };
+		43916F3B133FEB4300E41540 /* LoadFromCodeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43AC33D0133FE98A002C3384 /* LoadFromCodeController.xib */; };
+		43916F3C133FEB4300E41540 /* LoadFromNIBController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43AC33D6133FE98A002C3384 /* LoadFromNIBController.xib */; };
+		43916F3D133FEB4300E41540 /* LoadFromNIBView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43AC33DA133FE98A002C3384 /* LoadFromNIBView.xib */; };
+		43916F3E133FEB4300E41540 /* LayoutSupportController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43AC33DE133FE98A002C3384 /* LayoutSupportController.xib */; };
+		43916F3F133FEB4300E41540 /* TestLayoutsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43AC33E1133FE98A002C3384 /* TestLayoutsView.xib */; };
+		43916F40133FEB4300E41540 /* AutomaticLayoutChangesController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43AC33E5133FE98A002C3384 /* AutomaticLayoutChangesController.xib */; };
+		43916F41133FEB4300E41540 /* AutomaticLayoutChangesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43AC33E8133FE98A002C3384 /* AutomaticLayoutChangesView.xib */; };
+		43916F42133FEB4300E41540 /* ViewTemplatesController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43AC33EC133FE98A002C3384 /* ViewTemplatesController.xib */; };
+		43916F43133FEB4300E41540 /* ViewTemplatesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43AC33F0133FE98A002C3384 /* ViewTemplatesView.xib */; };
+		43916F45133FEB4300E41540 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		43916F46133FEB4300E41540 /* NMViewAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* NMViewAppDelegate.m */; };
+		43916F47133FEB4300E41540 /* UIImage+NMNSCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33BA133FE95D002C3384 /* UIImage+NMNSCoding.m */; };
+		43916F48133FEB4300E41540 /* UIView+NMTemplating.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33BC133FE95D002C3384 /* UIView+NMTemplating.m */; };
+		43916F49133FEB4300E41540 /* NMViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33BF133FE95D002C3384 /* NMViewLayout.m */; };
+		43916F4A133FEB4300E41540 /* NMViewLayoutOmitSubviewsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33C1133FE95D002C3384 /* NMViewLayoutOmitSubviewsView.m */; };
+		43916F4B133FEB4300E41540 /* NMViewLayoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33C3133FE95D002C3384 /* NMViewLayoutView.m */; };
+		43916F4C133FEB4300E41540 /* NMView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33C5133FE95D002C3384 /* NMView.m */; };
+		43916F4D133FEB4300E41540 /* LoadFromCodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33CF133FE98A002C3384 /* LoadFromCodeController.m */; };
+		43916F4E133FEB4300E41540 /* LoadFromCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33D2133FE98A002C3384 /* LoadFromCodeView.m */; };
+		43916F4F133FEB4300E41540 /* LoadFromNIBController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33D5133FE98A002C3384 /* LoadFromNIBController.m */; };
+		43916F50133FEB4300E41540 /* LoadFromNIBView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33D9133FE98A002C3384 /* LoadFromNIBView.m */; };
+		43916F51133FEB4300E41540 /* LayoutSupportController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33DD133FE98A002C3384 /* LayoutSupportController.m */; };
+		43916F52133FEB4300E41540 /* TestLayoutsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33E0133FE98A002C3384 /* TestLayoutsView.m */; };
+		43916F53133FEB4300E41540 /* AutomaticLayoutChangesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33E4133FE98A002C3384 /* AutomaticLayoutChangesController.m */; };
+		43916F54133FEB4300E41540 /* AutomaticLayoutChangesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33E7133FE98A002C3384 /* AutomaticLayoutChangesView.m */; };
+		43916F55133FEB4300E41540 /* ViewTemplatesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33EB133FE98A002C3384 /* ViewTemplatesController.m */; };
+		43916F56133FEB4300E41540 /* ViewTemplatesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33EF133FE98A002C3384 /* ViewTemplatesView.m */; };
+		43916F58133FEB4300E41540 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		43916F59133FEB4300E41540 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		43916F5A133FEB4300E41540 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		43916F5B133FEB4300E41540 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43BABA4F1281D99600F8445F /* StoreKit.framework */; };
+		43916F5C133FEB4300E41540 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43BABA531281D99F00F8445F /* CoreLocation.framework */; };
+		43916F5D133FEB4300E41540 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43BABA5E1281DA8B00F8445F /* SystemConfiguration.framework */; };
+		43916F79133FEBF200E41540 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 43916F78133FEBF200E41540 /* Icon-72.png */; };
+		43916F7A133FEBF200E41540 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 43916F78133FEBF200E41540 /* Icon-72.png */; };
+		43916F7B133FEBF200E41540 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 43916F78133FEBF200E41540 /* Icon-72.png */; };
+		43916F7C133FEBF200E41540 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 43916F78133FEBF200E41540 /* Icon-72.png */; };
+		43916F7D133FEBF200E41540 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 43916F78133FEBF200E41540 /* Icon-72.png */; };
+		43AC33C6133FE95D002C3384 /* UIImage+NMNSCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33BA133FE95D002C3384 /* UIImage+NMNSCoding.m */; };
+		43AC33C7133FE95D002C3384 /* UIView+NMTemplating.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33BC133FE95D002C3384 /* UIView+NMTemplating.m */; };
+		43AC33C8133FE95D002C3384 /* NMViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33BF133FE95D002C3384 /* NMViewLayout.m */; };
+		43AC33C9133FE95D002C3384 /* NMViewLayoutOmitSubviewsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33C1133FE95D002C3384 /* NMViewLayoutOmitSubviewsView.m */; };
+		43AC33CA133FE95D002C3384 /* NMViewLayoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33C3133FE95D002C3384 /* NMViewLayoutView.m */; };
+		43AC33CB133FE95D002C3384 /* NMView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33C5133FE95D002C3384 /* NMView.m */; };
+		43AC33F1133FE98A002C3384 /* LoadFromCodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33CF133FE98A002C3384 /* LoadFromCodeController.m */; };
+		43AC33F2133FE98A002C3384 /* LoadFromCodeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43AC33D0133FE98A002C3384 /* LoadFromCodeController.xib */; };
+		43AC33F3133FE98A002C3384 /* LoadFromCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33D2133FE98A002C3384 /* LoadFromCodeView.m */; };
+		43AC33F4133FE98A002C3384 /* LoadFromNIBController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33D5133FE98A002C3384 /* LoadFromNIBController.m */; };
+		43AC33F5133FE98A002C3384 /* LoadFromNIBController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43AC33D6133FE98A002C3384 /* LoadFromNIBController.xib */; };
+		43AC33F6133FE98A002C3384 /* LoadFromNIBView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33D9133FE98A002C3384 /* LoadFromNIBView.m */; };
+		43AC33F7133FE98A002C3384 /* LoadFromNIBView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43AC33DA133FE98A002C3384 /* LoadFromNIBView.xib */; };
+		43AC33F8133FE98A002C3384 /* LayoutSupportController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33DD133FE98A002C3384 /* LayoutSupportController.m */; };
+		43AC33F9133FE98A002C3384 /* LayoutSupportController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43AC33DE133FE98A002C3384 /* LayoutSupportController.xib */; };
+		43AC33FA133FE98A002C3384 /* TestLayoutsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33E0133FE98A002C3384 /* TestLayoutsView.m */; };
+		43AC33FB133FE98A002C3384 /* TestLayoutsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43AC33E1133FE98A002C3384 /* TestLayoutsView.xib */; };
+		43AC33FC133FE98A002C3384 /* AutomaticLayoutChangesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33E4133FE98A002C3384 /* AutomaticLayoutChangesController.m */; };
+		43AC33FD133FE98A002C3384 /* AutomaticLayoutChangesController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43AC33E5133FE98A002C3384 /* AutomaticLayoutChangesController.xib */; };
+		43AC33FE133FE98A002C3384 /* AutomaticLayoutChangesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33E7133FE98A002C3384 /* AutomaticLayoutChangesView.m */; };
+		43AC33FF133FE98A002C3384 /* AutomaticLayoutChangesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43AC33E8133FE98A002C3384 /* AutomaticLayoutChangesView.xib */; };
+		43AC3400133FE98A002C3384 /* ViewTemplatesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33EB133FE98A002C3384 /* ViewTemplatesController.m */; };
+		43AC3401133FE98A002C3384 /* ViewTemplatesController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43AC33EC133FE98A002C3384 /* ViewTemplatesController.xib */; };
+		43AC3402133FE98A002C3384 /* ViewTemplatesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33EF133FE98A002C3384 /* ViewTemplatesView.m */; };
+		43AC3403133FE98A002C3384 /* ViewTemplatesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43AC33F0133FE98A002C3384 /* ViewTemplatesView.xib */; };
+		43BABA501281D99600F8445F /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43BABA4F1281D99600F8445F /* StoreKit.framework */; };
+		43BABA541281D99F00F8445F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43BABA531281D99F00F8445F /* CoreLocation.framework */; };
+		43BABA5F1281DA8B00F8445F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43BABA5E1281DA8B00F8445F /* SystemConfiguration.framework */; };
+		43F01DE911D37F96001C4390 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43F01DE711D37F8A001C4390 /* MainWindow.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* NMViewAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMViewAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* NMViewAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMViewAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* LoadFromCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoadFromCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* NMView_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMView_Prefix.pch; sourceTree = "<group>"; };
+		43916ED1133FEAB300E41540 /* LoadFromNIB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoadFromNIB.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		43916F07133FEAF100E41540 /* LayoutSupport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LayoutSupport.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		43916F35133FEB1900E41540 /* AutomaticLayoutChanges.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutomaticLayoutChanges.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		43916F63133FEB4300E41540 /* ViewTemplates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewTemplates.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		43916F78133FEBF200E41540 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		43916FC6133FEEF100E41540 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
+		43AC33B9133FE95D002C3384 /* UIImage+NMNSCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+NMNSCoding.h"; sourceTree = "<group>"; };
+		43AC33BA133FE95D002C3384 /* UIImage+NMNSCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+NMNSCoding.m"; sourceTree = "<group>"; };
+		43AC33BB133FE95D002C3384 /* UIView+NMTemplating.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+NMTemplating.h"; sourceTree = "<group>"; };
+		43AC33BC133FE95D002C3384 /* UIView+NMTemplating.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+NMTemplating.m"; sourceTree = "<group>"; };
+		43AC33BE133FE95D002C3384 /* NMViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMViewLayout.h; sourceTree = "<group>"; };
+		43AC33BF133FE95D002C3384 /* NMViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMViewLayout.m; sourceTree = "<group>"; };
+		43AC33C0133FE95D002C3384 /* NMViewLayoutOmitSubviewsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMViewLayoutOmitSubviewsView.h; sourceTree = "<group>"; };
+		43AC33C1133FE95D002C3384 /* NMViewLayoutOmitSubviewsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMViewLayoutOmitSubviewsView.m; sourceTree = "<group>"; };
+		43AC33C2133FE95D002C3384 /* NMViewLayoutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMViewLayoutView.h; sourceTree = "<group>"; };
+		43AC33C3133FE95D002C3384 /* NMViewLayoutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMViewLayoutView.m; sourceTree = "<group>"; };
+		43AC33C4133FE95D002C3384 /* NMView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMView.h; sourceTree = "<group>"; };
+		43AC33C5133FE95D002C3384 /* NMView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMView.m; sourceTree = "<group>"; };
+		43AC33CE133FE98A002C3384 /* LoadFromCodeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadFromCodeController.h; sourceTree = "<group>"; };
+		43AC33CF133FE98A002C3384 /* LoadFromCodeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadFromCodeController.m; sourceTree = "<group>"; };
+		43AC33D0133FE98A002C3384 /* LoadFromCodeController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadFromCodeController.xib; sourceTree = "<group>"; };
+		43AC33D1133FE98A002C3384 /* LoadFromCodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadFromCodeView.h; sourceTree = "<group>"; };
+		43AC33D2133FE98A002C3384 /* LoadFromCodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadFromCodeView.m; sourceTree = "<group>"; };
+		43AC33D4133FE98A002C3384 /* LoadFromNIBController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadFromNIBController.h; sourceTree = "<group>"; };
+		43AC33D5133FE98A002C3384 /* LoadFromNIBController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadFromNIBController.m; sourceTree = "<group>"; };
+		43AC33D6133FE98A002C3384 /* LoadFromNIBController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadFromNIBController.xib; sourceTree = "<group>"; };
+		43AC33D7133FE98A002C3384 /* LoadFromNIBView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadFromNIBView.h; sourceTree = "<group>"; };
+		43AC33D8133FE98A002C3384 /* LoadFromNIBView+IB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LoadFromNIBView+IB.h"; sourceTree = "<group>"; };
+		43AC33D9133FE98A002C3384 /* LoadFromNIBView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadFromNIBView.m; sourceTree = "<group>"; };
+		43AC33DA133FE98A002C3384 /* LoadFromNIBView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadFromNIBView.xib; sourceTree = "<group>"; };
+		43AC33DC133FE98A002C3384 /* LayoutSupportController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayoutSupportController.h; sourceTree = "<group>"; };
+		43AC33DD133FE98A002C3384 /* LayoutSupportController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayoutSupportController.m; sourceTree = "<group>"; };
+		43AC33DE133FE98A002C3384 /* LayoutSupportController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LayoutSupportController.xib; sourceTree = "<group>"; };
+		43AC33DF133FE98A002C3384 /* TestLayoutsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestLayoutsView.h; sourceTree = "<group>"; };
+		43AC33E0133FE98A002C3384 /* TestLayoutsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestLayoutsView.m; sourceTree = "<group>"; };
+		43AC33E1133FE98A002C3384 /* TestLayoutsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestLayoutsView.xib; sourceTree = "<group>"; };
+		43AC33E3133FE98A002C3384 /* AutomaticLayoutChangesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutomaticLayoutChangesController.h; sourceTree = "<group>"; };
+		43AC33E4133FE98A002C3384 /* AutomaticLayoutChangesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutomaticLayoutChangesController.m; sourceTree = "<group>"; };
+		43AC33E5133FE98A002C3384 /* AutomaticLayoutChangesController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AutomaticLayoutChangesController.xib; sourceTree = "<group>"; };
+		43AC33E6133FE98A002C3384 /* AutomaticLayoutChangesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutomaticLayoutChangesView.h; sourceTree = "<group>"; };
+		43AC33E7133FE98A002C3384 /* AutomaticLayoutChangesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutomaticLayoutChangesView.m; sourceTree = "<group>"; };
+		43AC33E8133FE98A002C3384 /* AutomaticLayoutChangesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AutomaticLayoutChangesView.xib; sourceTree = "<group>"; };
+		43AC33EA133FE98A002C3384 /* ViewTemplatesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewTemplatesController.h; sourceTree = "<group>"; };
+		43AC33EB133FE98A002C3384 /* ViewTemplatesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewTemplatesController.m; sourceTree = "<group>"; };
+		43AC33EC133FE98A002C3384 /* ViewTemplatesController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewTemplatesController.xib; sourceTree = "<group>"; };
+		43AC33ED133FE98A002C3384 /* ViewTemplatesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewTemplatesView.h; sourceTree = "<group>"; };
+		43AC33EE133FE98A002C3384 /* ViewTemplatesView+IB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewTemplatesView+IB.h"; sourceTree = "<group>"; };
+		43AC33EF133FE98A002C3384 /* ViewTemplatesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewTemplatesView.m; sourceTree = "<group>"; };
+		43AC33F0133FE98A002C3384 /* ViewTemplatesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewTemplatesView.xib; sourceTree = "<group>"; };
+		43BABA4F1281D99600F8445F /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		43BABA531281D99F00F8445F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		43BABA5E1281DA8B00F8445F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		43F01DE611D37F8A001C4390 /* NMView-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "NMView-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		43F01DE711D37F8A001C4390 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
+				43BABA501281D99600F8445F /* StoreKit.framework in Frameworks */,
+				43BABA541281D99F00F8445F /* CoreLocation.framework in Frameworks */,
+				43BABA5F1281DA8B00F8445F /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43916EC5133FEAB300E41540 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43916EC6133FEAB300E41540 /* Foundation.framework in Frameworks */,
+				43916EC7133FEAB300E41540 /* UIKit.framework in Frameworks */,
+				43916EC8133FEAB300E41540 /* CoreGraphics.framework in Frameworks */,
+				43916EC9133FEAB300E41540 /* StoreKit.framework in Frameworks */,
+				43916ECA133FEAB300E41540 /* CoreLocation.framework in Frameworks */,
+				43916ECB133FEAB300E41540 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43916EFB133FEAF100E41540 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43916EFC133FEAF100E41540 /* Foundation.framework in Frameworks */,
+				43916EFD133FEAF100E41540 /* UIKit.framework in Frameworks */,
+				43916EFE133FEAF100E41540 /* CoreGraphics.framework in Frameworks */,
+				43916EFF133FEAF100E41540 /* StoreKit.framework in Frameworks */,
+				43916F00133FEAF100E41540 /* CoreLocation.framework in Frameworks */,
+				43916F01133FEAF100E41540 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43916F29133FEB1900E41540 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43916F2A133FEB1900E41540 /* Foundation.framework in Frameworks */,
+				43916F2B133FEB1900E41540 /* UIKit.framework in Frameworks */,
+				43916F2C133FEB1900E41540 /* CoreGraphics.framework in Frameworks */,
+				43916F2D133FEB1900E41540 /* StoreKit.framework in Frameworks */,
+				43916F2E133FEB1900E41540 /* CoreLocation.framework in Frameworks */,
+				43916F2F133FEB1900E41540 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43916F57133FEB4300E41540 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43916F58133FEB4300E41540 /* Foundation.framework in Frameworks */,
+				43916F59133FEB4300E41540 /* UIKit.framework in Frameworks */,
+				43916F5A133FEB4300E41540 /* CoreGraphics.framework in Frameworks */,
+				43916F5B133FEB4300E41540 /* StoreKit.framework in Frameworks */,
+				43916F5C133FEB4300E41540 /* CoreLocation.framework in Frameworks */,
+				43916F5D133FEB4300E41540 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				43AC33CC133FE98A002C3384 /* Samples */,
+				1D3623240D0F684500981E51 /* NMViewAppDelegate.h */,
+				1D3623250D0F684500981E51 /* NMViewAppDelegate.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* LoadFromCode.app */,
+				43916ED1133FEAB300E41540 /* LoadFromNIB.app */,
+				43916F07133FEAF100E41540 /* LayoutSupport.app */,
+				43916F35133FEB1900E41540 /* AutomaticLayoutChanges.app */,
+				43916F63133FEB4300E41540 /* ViewTemplates.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				43916FC6133FEEF100E41540 /* README.markdown */,
+				43BAB9801281CC8900F8445F /* Libraries */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* NMView_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				43916F78133FEBF200E41540 /* Icon-72.png */,
+				43F01DE711D37F8A001C4390 /* MainWindow.xib */,
+				43F01DE611D37F8A001C4390 /* NMView-Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
+				43BABA4F1281D99600F8445F /* StoreKit.framework */,
+				43BABA531281D99F00F8445F /* CoreLocation.framework */,
+				43BABA5E1281DA8B00F8445F /* SystemConfiguration.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		43AC33B7133FE95D002C3384 /* NMView */ = {
+			isa = PBXGroup;
+			children = (
+				43AC33B8133FE95D002C3384 /* Extensions */,
+				43AC33BD133FE95D002C3384 /* Layouting */,
+				43AC33C4133FE95D002C3384 /* NMView.h */,
+				43AC33C5133FE95D002C3384 /* NMView.m */,
+			);
+			path = NMView;
+			sourceTree = "<group>";
+		};
+		43AC33B8133FE95D002C3384 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				43AC33B9133FE95D002C3384 /* UIImage+NMNSCoding.h */,
+				43AC33BA133FE95D002C3384 /* UIImage+NMNSCoding.m */,
+				43AC33BB133FE95D002C3384 /* UIView+NMTemplating.h */,
+				43AC33BC133FE95D002C3384 /* UIView+NMTemplating.m */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		43AC33BD133FE95D002C3384 /* Layouting */ = {
+			isa = PBXGroup;
+			children = (
+				43AC33BE133FE95D002C3384 /* NMViewLayout.h */,
+				43AC33BF133FE95D002C3384 /* NMViewLayout.m */,
+				43AC33C0133FE95D002C3384 /* NMViewLayoutOmitSubviewsView.h */,
+				43AC33C1133FE95D002C3384 /* NMViewLayoutOmitSubviewsView.m */,
+				43AC33C2133FE95D002C3384 /* NMViewLayoutView.h */,
+				43AC33C3133FE95D002C3384 /* NMViewLayoutView.m */,
+			);
+			name = Layouting;
+			sourceTree = "<group>";
+		};
+		43AC33CC133FE98A002C3384 /* Samples */ = {
+			isa = PBXGroup;
+			children = (
+				43AC33CD133FE98A002C3384 /* 0. Load from Code */,
+				43AC33D3133FE98A002C3384 /* 1. Load from NIB */,
+				43AC33DB133FE98A002C3384 /* 2. Layout Support */,
+				43AC33E2133FE98A002C3384 /* 3. Automatic Layout Changes */,
+				43AC33E9133FE98A002C3384 /* 10. Advanced: View Templates */,
+			);
+			name = Samples;
+			sourceTree = "<group>";
+		};
+		43AC33CD133FE98A002C3384 /* 0. Load from Code */ = {
+			isa = PBXGroup;
+			children = (
+				43AC33CE133FE98A002C3384 /* LoadFromCodeController.h */,
+				43AC33CF133FE98A002C3384 /* LoadFromCodeController.m */,
+				43AC33D0133FE98A002C3384 /* LoadFromCodeController.xib */,
+				43AC33D1133FE98A002C3384 /* LoadFromCodeView.h */,
+				43AC33D2133FE98A002C3384 /* LoadFromCodeView.m */,
+			);
+			name = "0. Load from Code";
+			sourceTree = "<group>";
+		};
+		43AC33D3133FE98A002C3384 /* 1. Load from NIB */ = {
+			isa = PBXGroup;
+			children = (
+				43AC33D4133FE98A002C3384 /* LoadFromNIBController.h */,
+				43AC33D5133FE98A002C3384 /* LoadFromNIBController.m */,
+				43AC33D6133FE98A002C3384 /* LoadFromNIBController.xib */,
+				43AC33D7133FE98A002C3384 /* LoadFromNIBView.h */,
+				43AC33D8133FE98A002C3384 /* LoadFromNIBView+IB.h */,
+				43AC33D9133FE98A002C3384 /* LoadFromNIBView.m */,
+				43AC33DA133FE98A002C3384 /* LoadFromNIBView.xib */,
+			);
+			name = "1. Load from NIB";
+			sourceTree = "<group>";
+		};
+		43AC33DB133FE98A002C3384 /* 2. Layout Support */ = {
+			isa = PBXGroup;
+			children = (
+				43AC33DC133FE98A002C3384 /* LayoutSupportController.h */,
+				43AC33DD133FE98A002C3384 /* LayoutSupportController.m */,
+				43AC33DE133FE98A002C3384 /* LayoutSupportController.xib */,
+				43AC33DF133FE98A002C3384 /* TestLayoutsView.h */,
+				43AC33E0133FE98A002C3384 /* TestLayoutsView.m */,
+				43AC33E1133FE98A002C3384 /* TestLayoutsView.xib */,
+			);
+			name = "2. Layout Support";
+			sourceTree = "<group>";
+		};
+		43AC33E2133FE98A002C3384 /* 3. Automatic Layout Changes */ = {
+			isa = PBXGroup;
+			children = (
+				43AC33E3133FE98A002C3384 /* AutomaticLayoutChangesController.h */,
+				43AC33E4133FE98A002C3384 /* AutomaticLayoutChangesController.m */,
+				43AC33E5133FE98A002C3384 /* AutomaticLayoutChangesController.xib */,
+				43AC33E6133FE98A002C3384 /* AutomaticLayoutChangesView.h */,
+				43AC33E7133FE98A002C3384 /* AutomaticLayoutChangesView.m */,
+				43AC33E8133FE98A002C3384 /* AutomaticLayoutChangesView.xib */,
+			);
+			name = "3. Automatic Layout Changes";
+			sourceTree = "<group>";
+		};
+		43AC33E9133FE98A002C3384 /* 10. Advanced: View Templates */ = {
+			isa = PBXGroup;
+			children = (
+				43AC33EA133FE98A002C3384 /* ViewTemplatesController.h */,
+				43AC33EB133FE98A002C3384 /* ViewTemplatesController.m */,
+				43AC33EC133FE98A002C3384 /* ViewTemplatesController.xib */,
+				43AC33ED133FE98A002C3384 /* ViewTemplatesView.h */,
+				43AC33EE133FE98A002C3384 /* ViewTemplatesView+IB.h */,
+				43AC33EF133FE98A002C3384 /* ViewTemplatesView.m */,
+				43AC33F0133FE98A002C3384 /* ViewTemplatesView.xib */,
+			);
+			name = "10. Advanced: View Templates";
+			sourceTree = "<group>";
+		};
+		43BAB9801281CC8900F8445F /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				43AC33B7133FE95D002C3384 /* NMView */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* LoadFromCode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "LoadFromCode" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LoadFromCode;
+			productName = NMView;
+			productReference = 1D6058910D05DD3D006BFB54 /* LoadFromCode.app */;
+			productType = "com.apple.product-type.application";
+		};
+		43916EA6133FEAB300E41540 /* LoadFromNIB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43916ECC133FEAB300E41540 /* Build configuration list for PBXNativeTarget "LoadFromNIB" */;
+			buildPhases = (
+				43916EA7133FEAB300E41540 /* Resources */,
+				43916EB2133FEAB300E41540 /* Sources */,
+				43916EC5133FEAB300E41540 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LoadFromNIB;
+			productName = NMView;
+			productReference = 43916ED1133FEAB300E41540 /* LoadFromNIB.app */;
+			productType = "com.apple.product-type.application";
+		};
+		43916EDC133FEAF100E41540 /* LayoutSupport */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43916F02133FEAF100E41540 /* Build configuration list for PBXNativeTarget "LayoutSupport" */;
+			buildPhases = (
+				43916EDD133FEAF100E41540 /* Resources */,
+				43916EE8133FEAF100E41540 /* Sources */,
+				43916EFB133FEAF100E41540 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LayoutSupport;
+			productName = NMView;
+			productReference = 43916F07133FEAF100E41540 /* LayoutSupport.app */;
+			productType = "com.apple.product-type.application";
+		};
+		43916F0A133FEB1900E41540 /* AutomaticLayoutChanges */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43916F30133FEB1900E41540 /* Build configuration list for PBXNativeTarget "AutomaticLayoutChanges" */;
+			buildPhases = (
+				43916F0B133FEB1900E41540 /* Resources */,
+				43916F16133FEB1900E41540 /* Sources */,
+				43916F29133FEB1900E41540 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AutomaticLayoutChanges;
+			productName = NMView;
+			productReference = 43916F35133FEB1900E41540 /* AutomaticLayoutChanges.app */;
+			productType = "com.apple.product-type.application";
+		};
+		43916F38133FEB4300E41540 /* ViewTemplates */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43916F5E133FEB4300E41540 /* Build configuration list for PBXNativeTarget "ViewTemplates" */;
+			buildPhases = (
+				43916F39133FEB4300E41540 /* Resources */,
+				43916F44133FEB4300E41540 /* Sources */,
+				43916F57133FEB4300E41540 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ViewTemplates;
+			productName = NMView;
+			productReference = 43916F63133FEB4300E41540 /* ViewTemplates.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "NEXT Munich. The App Agency.";
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "NMView" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* LoadFromCode */,
+				43916EA6133FEAB300E41540 /* LoadFromNIB */,
+				43916EDC133FEAF100E41540 /* LayoutSupport */,
+				43916F0A133FEB1900E41540 /* AutomaticLayoutChanges */,
+				43916F38133FEB4300E41540 /* ViewTemplates */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43F01DE911D37F96001C4390 /* MainWindow.xib in Resources */,
+				43AC33F2133FE98A002C3384 /* LoadFromCodeController.xib in Resources */,
+				43AC33F5133FE98A002C3384 /* LoadFromNIBController.xib in Resources */,
+				43AC33F7133FE98A002C3384 /* LoadFromNIBView.xib in Resources */,
+				43AC33F9133FE98A002C3384 /* LayoutSupportController.xib in Resources */,
+				43AC33FB133FE98A002C3384 /* TestLayoutsView.xib in Resources */,
+				43AC33FD133FE98A002C3384 /* AutomaticLayoutChangesController.xib in Resources */,
+				43AC33FF133FE98A002C3384 /* AutomaticLayoutChangesView.xib in Resources */,
+				43AC3401133FE98A002C3384 /* ViewTemplatesController.xib in Resources */,
+				43AC3403133FE98A002C3384 /* ViewTemplatesView.xib in Resources */,
+				43916F79133FEBF200E41540 /* Icon-72.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43916EA7133FEAB300E41540 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43916EA8133FEAB300E41540 /* MainWindow.xib in Resources */,
+				43916EA9133FEAB300E41540 /* LoadFromCodeController.xib in Resources */,
+				43916EAA133FEAB300E41540 /* LoadFromNIBController.xib in Resources */,
+				43916EAB133FEAB300E41540 /* LoadFromNIBView.xib in Resources */,
+				43916EAC133FEAB300E41540 /* LayoutSupportController.xib in Resources */,
+				43916EAD133FEAB300E41540 /* TestLayoutsView.xib in Resources */,
+				43916EAE133FEAB300E41540 /* AutomaticLayoutChangesController.xib in Resources */,
+				43916EAF133FEAB300E41540 /* AutomaticLayoutChangesView.xib in Resources */,
+				43916EB0133FEAB300E41540 /* ViewTemplatesController.xib in Resources */,
+				43916EB1133FEAB300E41540 /* ViewTemplatesView.xib in Resources */,
+				43916F7A133FEBF200E41540 /* Icon-72.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43916EDD133FEAF100E41540 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43916EDE133FEAF100E41540 /* MainWindow.xib in Resources */,
+				43916EDF133FEAF100E41540 /* LoadFromCodeController.xib in Resources */,
+				43916EE0133FEAF100E41540 /* LoadFromNIBController.xib in Resources */,
+				43916EE1133FEAF100E41540 /* LoadFromNIBView.xib in Resources */,
+				43916EE2133FEAF100E41540 /* LayoutSupportController.xib in Resources */,
+				43916EE3133FEAF100E41540 /* TestLayoutsView.xib in Resources */,
+				43916EE4133FEAF100E41540 /* AutomaticLayoutChangesController.xib in Resources */,
+				43916EE5133FEAF100E41540 /* AutomaticLayoutChangesView.xib in Resources */,
+				43916EE6133FEAF100E41540 /* ViewTemplatesController.xib in Resources */,
+				43916EE7133FEAF100E41540 /* ViewTemplatesView.xib in Resources */,
+				43916F7B133FEBF200E41540 /* Icon-72.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43916F0B133FEB1900E41540 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43916F0C133FEB1900E41540 /* MainWindow.xib in Resources */,
+				43916F0D133FEB1900E41540 /* LoadFromCodeController.xib in Resources */,
+				43916F0E133FEB1900E41540 /* LoadFromNIBController.xib in Resources */,
+				43916F0F133FEB1900E41540 /* LoadFromNIBView.xib in Resources */,
+				43916F10133FEB1900E41540 /* LayoutSupportController.xib in Resources */,
+				43916F11133FEB1900E41540 /* TestLayoutsView.xib in Resources */,
+				43916F12133FEB1900E41540 /* AutomaticLayoutChangesController.xib in Resources */,
+				43916F13133FEB1900E41540 /* AutomaticLayoutChangesView.xib in Resources */,
+				43916F14133FEB1900E41540 /* ViewTemplatesController.xib in Resources */,
+				43916F15133FEB1900E41540 /* ViewTemplatesView.xib in Resources */,
+				43916F7C133FEBF200E41540 /* Icon-72.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43916F39133FEB4300E41540 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43916F3A133FEB4300E41540 /* MainWindow.xib in Resources */,
+				43916F3B133FEB4300E41540 /* LoadFromCodeController.xib in Resources */,
+				43916F3C133FEB4300E41540 /* LoadFromNIBController.xib in Resources */,
+				43916F3D133FEB4300E41540 /* LoadFromNIBView.xib in Resources */,
+				43916F3E133FEB4300E41540 /* LayoutSupportController.xib in Resources */,
+				43916F3F133FEB4300E41540 /* TestLayoutsView.xib in Resources */,
+				43916F40133FEB4300E41540 /* AutomaticLayoutChangesController.xib in Resources */,
+				43916F41133FEB4300E41540 /* AutomaticLayoutChangesView.xib in Resources */,
+				43916F42133FEB4300E41540 /* ViewTemplatesController.xib in Resources */,
+				43916F43133FEB4300E41540 /* ViewTemplatesView.xib in Resources */,
+				43916F7D133FEBF200E41540 /* Icon-72.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* NMViewAppDelegate.m in Sources */,
+				43AC33C6133FE95D002C3384 /* UIImage+NMNSCoding.m in Sources */,
+				43AC33C7133FE95D002C3384 /* UIView+NMTemplating.m in Sources */,
+				43AC33C8133FE95D002C3384 /* NMViewLayout.m in Sources */,
+				43AC33C9133FE95D002C3384 /* NMViewLayoutOmitSubviewsView.m in Sources */,
+				43AC33CA133FE95D002C3384 /* NMViewLayoutView.m in Sources */,
+				43AC33CB133FE95D002C3384 /* NMView.m in Sources */,
+				43AC33F1133FE98A002C3384 /* LoadFromCodeController.m in Sources */,
+				43AC33F3133FE98A002C3384 /* LoadFromCodeView.m in Sources */,
+				43AC33F4133FE98A002C3384 /* LoadFromNIBController.m in Sources */,
+				43AC33F6133FE98A002C3384 /* LoadFromNIBView.m in Sources */,
+				43AC33F8133FE98A002C3384 /* LayoutSupportController.m in Sources */,
+				43AC33FA133FE98A002C3384 /* TestLayoutsView.m in Sources */,
+				43AC33FC133FE98A002C3384 /* AutomaticLayoutChangesController.m in Sources */,
+				43AC33FE133FE98A002C3384 /* AutomaticLayoutChangesView.m in Sources */,
+				43AC3400133FE98A002C3384 /* ViewTemplatesController.m in Sources */,
+				43AC3402133FE98A002C3384 /* ViewTemplatesView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43916EB2133FEAB300E41540 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43916EB3133FEAB300E41540 /* main.m in Sources */,
+				43916EB4133FEAB300E41540 /* NMViewAppDelegate.m in Sources */,
+				43916EB5133FEAB300E41540 /* UIImage+NMNSCoding.m in Sources */,
+				43916EB6133FEAB300E41540 /* UIView+NMTemplating.m in Sources */,
+				43916EB7133FEAB300E41540 /* NMViewLayout.m in Sources */,
+				43916EB8133FEAB300E41540 /* NMViewLayoutOmitSubviewsView.m in Sources */,
+				43916EB9133FEAB300E41540 /* NMViewLayoutView.m in Sources */,
+				43916EBA133FEAB300E41540 /* NMView.m in Sources */,
+				43916EBB133FEAB300E41540 /* LoadFromCodeController.m in Sources */,
+				43916EBC133FEAB300E41540 /* LoadFromCodeView.m in Sources */,
+				43916EBD133FEAB300E41540 /* LoadFromNIBController.m in Sources */,
+				43916EBE133FEAB300E41540 /* LoadFromNIBView.m in Sources */,
+				43916EBF133FEAB300E41540 /* LayoutSupportController.m in Sources */,
+				43916EC0133FEAB300E41540 /* TestLayoutsView.m in Sources */,
+				43916EC1133FEAB300E41540 /* AutomaticLayoutChangesController.m in Sources */,
+				43916EC2133FEAB300E41540 /* AutomaticLayoutChangesView.m in Sources */,
+				43916EC3133FEAB300E41540 /* ViewTemplatesController.m in Sources */,
+				43916EC4133FEAB300E41540 /* ViewTemplatesView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43916EE8133FEAF100E41540 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43916EE9133FEAF100E41540 /* main.m in Sources */,
+				43916EEA133FEAF100E41540 /* NMViewAppDelegate.m in Sources */,
+				43916EEB133FEAF100E41540 /* UIImage+NMNSCoding.m in Sources */,
+				43916EEC133FEAF100E41540 /* UIView+NMTemplating.m in Sources */,
+				43916EED133FEAF100E41540 /* NMViewLayout.m in Sources */,
+				43916EEE133FEAF100E41540 /* NMViewLayoutOmitSubviewsView.m in Sources */,
+				43916EEF133FEAF100E41540 /* NMViewLayoutView.m in Sources */,
+				43916EF0133FEAF100E41540 /* NMView.m in Sources */,
+				43916EF1133FEAF100E41540 /* LoadFromCodeController.m in Sources */,
+				43916EF2133FEAF100E41540 /* LoadFromCodeView.m in Sources */,
+				43916EF3133FEAF100E41540 /* LoadFromNIBController.m in Sources */,
+				43916EF4133FEAF100E41540 /* LoadFromNIBView.m in Sources */,
+				43916EF5133FEAF100E41540 /* LayoutSupportController.m in Sources */,
+				43916EF6133FEAF100E41540 /* TestLayoutsView.m in Sources */,
+				43916EF7133FEAF100E41540 /* AutomaticLayoutChangesController.m in Sources */,
+				43916EF8133FEAF100E41540 /* AutomaticLayoutChangesView.m in Sources */,
+				43916EF9133FEAF100E41540 /* ViewTemplatesController.m in Sources */,
+				43916EFA133FEAF100E41540 /* ViewTemplatesView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43916F16133FEB1900E41540 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43916F17133FEB1900E41540 /* main.m in Sources */,
+				43916F18133FEB1900E41540 /* NMViewAppDelegate.m in Sources */,
+				43916F19133FEB1900E41540 /* UIImage+NMNSCoding.m in Sources */,
+				43916F1A133FEB1900E41540 /* UIView+NMTemplating.m in Sources */,
+				43916F1B133FEB1900E41540 /* NMViewLayout.m in Sources */,
+				43916F1C133FEB1900E41540 /* NMViewLayoutOmitSubviewsView.m in Sources */,
+				43916F1D133FEB1900E41540 /* NMViewLayoutView.m in Sources */,
+				43916F1E133FEB1900E41540 /* NMView.m in Sources */,
+				43916F1F133FEB1900E41540 /* LoadFromCodeController.m in Sources */,
+				43916F20133FEB1900E41540 /* LoadFromCodeView.m in Sources */,
+				43916F21133FEB1900E41540 /* LoadFromNIBController.m in Sources */,
+				43916F22133FEB1900E41540 /* LoadFromNIBView.m in Sources */,
+				43916F23133FEB1900E41540 /* LayoutSupportController.m in Sources */,
+				43916F24133FEB1900E41540 /* TestLayoutsView.m in Sources */,
+				43916F25133FEB1900E41540 /* AutomaticLayoutChangesController.m in Sources */,
+				43916F26133FEB1900E41540 /* AutomaticLayoutChangesView.m in Sources */,
+				43916F27133FEB1900E41540 /* ViewTemplatesController.m in Sources */,
+				43916F28133FEB1900E41540 /* ViewTemplatesView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43916F44133FEB4300E41540 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43916F45133FEB4300E41540 /* main.m in Sources */,
+				43916F46133FEB4300E41540 /* NMViewAppDelegate.m in Sources */,
+				43916F47133FEB4300E41540 /* UIImage+NMNSCoding.m in Sources */,
+				43916F48133FEB4300E41540 /* UIView+NMTemplating.m in Sources */,
+				43916F49133FEB4300E41540 /* NMViewLayout.m in Sources */,
+				43916F4A133FEB4300E41540 /* NMViewLayoutOmitSubviewsView.m in Sources */,
+				43916F4B133FEB4300E41540 /* NMViewLayoutView.m in Sources */,
+				43916F4C133FEB4300E41540 /* NMView.m in Sources */,
+				43916F4D133FEB4300E41540 /* LoadFromCodeController.m in Sources */,
+				43916F4E133FEB4300E41540 /* LoadFromCodeView.m in Sources */,
+				43916F4F133FEB4300E41540 /* LoadFromNIBController.m in Sources */,
+				43916F50133FEB4300E41540 /* LoadFromNIBView.m in Sources */,
+				43916F51133FEB4300E41540 /* LayoutSupportController.m in Sources */,
+				43916F52133FEB4300E41540 /* TestLayoutsView.m in Sources */,
+				43916F53133FEB4300E41540 /* AutomaticLayoutChangesController.m in Sources */,
+				43916F54133FEB4300E41540 /* AutomaticLayoutChangesView.m in Sources */,
+				43916F55133FEB4300E41540 /* ViewTemplatesController.m in Sources */,
+				43916F56133FEB4300E41540 /* ViewTemplatesView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = NMView_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					LOAD_FROM_CODE,
+					"CONFIGURATION_${CONFIGURATION}",
+				);
+				INFOPLIST_FILE = "Resources/NMView-Info.plist";
+				PRODUCT_NAME = LoadFromCode;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = NMView_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					LOAD_FROM_CODE,
+					"CONFIGURATION_${CONFIGURATION}",
+				);
+				INFOPLIST_FILE = "Resources/NMView-Info.plist";
+				PRODUCT_NAME = LoadFromCode;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		43916ECD133FEAB300E41540 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = NMView_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					LOAD_FROM_NIB,
+					"CONFIGURATION_${CONFIGURATION}",
+				);
+				INFOPLIST_FILE = "Resources/NMView-Info.plist";
+				PRODUCT_NAME = LoadFromNIB;
+			};
+			name = Debug;
+		};
+		43916ECE133FEAB300E41540 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = NMView_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					LOAD_FROM_NIB,
+					"CONFIGURATION_${CONFIGURATION}",
+				);
+				INFOPLIST_FILE = "Resources/NMView-Info.plist";
+				PRODUCT_NAME = LoadFromNIB;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		43916F03133FEAF100E41540 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = NMView_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					LAYOUT_SUPPORT,
+					"CONFIGURATION_${CONFIGURATION}",
+				);
+				INFOPLIST_FILE = "Resources/NMView-Info.plist";
+				PRODUCT_NAME = LayoutSupport;
+			};
+			name = Debug;
+		};
+		43916F04133FEAF100E41540 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = NMView_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					LAYOUT_SUPPORT,
+					"CONFIGURATION_${CONFIGURATION}",
+				);
+				INFOPLIST_FILE = "Resources/NMView-Info.plist";
+				PRODUCT_NAME = LayoutSupport;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		43916F31133FEB1900E41540 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = NMView_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					AUTOMATIC_LAYOUT_CHANGES,
+					"CONFIGURATION_${CONFIGURATION}",
+				);
+				INFOPLIST_FILE = "Resources/NMView-Info.plist";
+				PRODUCT_NAME = AutomaticLayoutChanges;
+			};
+			name = Debug;
+		};
+		43916F32133FEB1900E41540 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = NMView_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					AUTOMATIC_LAYOUT_CHANGES,
+					"CONFIGURATION_${CONFIGURATION}",
+				);
+				INFOPLIST_FILE = "Resources/NMView-Info.plist";
+				PRODUCT_NAME = AutomaticLayoutChanges;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		43916F5F133FEB4300E41540 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = NMView_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					VIEW_TEMPLATES,
+					"CONFIGURATION_${CONFIGURATION}",
+				);
+				INFOPLIST_FILE = "Resources/NMView-Info.plist";
+				PRODUCT_NAME = ViewTemplates;
+			};
+			name = Debug;
+		};
+		43916F60133FEB4300E41540 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = NMView_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					VIEW_TEMPLATES,
+					"CONFIGURATION_${CONFIGURATION}",
+				);
+				INFOPLIST_FILE = "Resources/NMView-Info.plist";
+				PRODUCT_NAME = ViewTemplates;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PREPROCESSOR_DEFINITIONS = "CONFIGURATION_${CONFIGURATION}";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PREPROCESSOR_DEFINITIONS = "CONFIGURATION_${CONFIGURATION}";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "LoadFromCode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43916ECC133FEAB300E41540 /* Build configuration list for PBXNativeTarget "LoadFromNIB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43916ECD133FEAB300E41540 /* Debug */,
+				43916ECE133FEAB300E41540 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43916F02133FEAF100E41540 /* Build configuration list for PBXNativeTarget "LayoutSupport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43916F03133FEAF100E41540 /* Debug */,
+				43916F04133FEAF100E41540 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43916F30133FEB1900E41540 /* Build configuration list for PBXNativeTarget "AutomaticLayoutChanges" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43916F31133FEB1900E41540 /* Debug */,
+				43916F32133FEB1900E41540 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43916F5E133FEB4300E41540 /* Build configuration list for PBXNativeTarget "ViewTemplates" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43916F5F133FEB4300E41540 /* Debug */,
+				43916F60133FEB4300E41540 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "NMView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
