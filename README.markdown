@@ -75,12 +75,12 @@ very much code by hand.
 
 A notable exception is when some UIImageViews need to use different bitmaps in portrait and
 landscape layouts. In that case, the bitmaps need to be assigned explicitly in the overridden method
-layoutDidChangeToAspectRatio:.
+-layoutDidChangeToAspectRatio:.
 
 It is important to keep in mind that only the first view in the nib file is really used in your
 application. All alternative layout views are used only to assign frames to subviews of the first
 view. If some view needs to have a red background in portrait but green in landscape, this needs to
-be coded in layoutDidChangeToAspectRatio: by hand. The code in the present version of NMview will
+be coded in -layoutDidChangeToAspectRatio: by hand. The code in the present version of NMview will
 ignore the background color set in the nib file for alternative views. Any other properties of the
 alternative views are also ignored.
 
