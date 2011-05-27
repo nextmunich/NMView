@@ -132,6 +132,17 @@
 #pragma mark View Loading
 
 /**
+ * Initializes a new view object by first calling -initWithFrame: of UIView with
+ * a default CGRect and subsequently trying to load the view by calling
+ * -loadViewWithNibName:bundle: passing nil / nil for the nib name and bundle.
+ *
+ * If the a nib file was loaded successfully, the view's frame will be set to
+ * that loaded from the nib file. If no matching nib was found, the -createView
+ * method can reset the default frame to a more suitable value.
+ */
+- (id)init;
+
+/**
  * Initializes a new view object by first calling -initWithFrame: of UIView and
  * subsequently trying to load the view by calling -loadViewWithNibName:bundle:
  * passing nil / nil for the nib name and bundle.

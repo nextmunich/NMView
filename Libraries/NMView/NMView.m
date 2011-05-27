@@ -135,6 +135,10 @@
 
 #pragma mark Init
 
+- (id)init {
+	return [self initWithNibName:nil bundle:nil];
+}
+
 - (id)initWithNibName:(NSString*)name bundle:(NSBundle*)bundle {
 	// use a dummy rect to initialize the UIView object
 	if ((self = [super initWithFrame:CGRectMake(0, 0, 100, 100)])) {
