@@ -170,12 +170,14 @@
 		// store the frame and tag loaded from the nib which is using this view
 		CGRect frameBeforeLoad = self.frame;
 		NSInteger t = self.tag;
+		UIViewAutoresizing mask = self.autoresizingMask;
 		
 		// load the view's layout
 		[self loadViewWithNibName:nil bundle:nil];
 		
 		// overwrite the nib-loaded frame and tag with the frame and tag of the
 		// nib using this view
+		self.autoresizingMask = mask;
 		self.frame = frameBeforeLoad;
 		self.tag = t;
 		
