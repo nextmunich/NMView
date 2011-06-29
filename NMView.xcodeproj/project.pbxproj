@@ -26,7 +26,7 @@
 		43916EB4133FEAB300E41540 /* NMViewAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* NMViewAppDelegate.m */; };
 		43916EB5133FEAB300E41540 /* UIImage+NMNSCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33BA133FE95D002C3384 /* UIImage+NMNSCoding.m */; };
 		43916EB6133FEAB300E41540 /* UIView+NMTemplating.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33BC133FE95D002C3384 /* UIView+NMTemplating.m */; };
-		43916EB7133FEAB300E41540 /* NMViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33BF133FE95D002C3384 /* NMViewLayout.m */; };
+		43916EB7133FEAB300E41540 /* NMExplicitLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33BF133FE95D002C3384 /* NMExplicitLayout.m */; };
 		43916EB8133FEAB300E41540 /* NMViewLayoutOmitSubviewsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33C1133FE95D002C3384 /* NMViewLayoutOmitSubviewsView.m */; };
 		43916EB9133FEAB300E41540 /* NMViewLayoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33C3133FE95D002C3384 /* NMViewLayoutView.m */; };
 		43916EBA133FEAB300E41540 /* NMView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33C5133FE95D002C3384 /* NMView.m */; };
@@ -60,7 +60,7 @@
 		43916EEA133FEAF100E41540 /* NMViewAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* NMViewAppDelegate.m */; };
 		43916EEB133FEAF100E41540 /* UIImage+NMNSCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33BA133FE95D002C3384 /* UIImage+NMNSCoding.m */; };
 		43916EEC133FEAF100E41540 /* UIView+NMTemplating.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33BC133FE95D002C3384 /* UIView+NMTemplating.m */; };
-		43916EED133FEAF100E41540 /* NMViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33BF133FE95D002C3384 /* NMViewLayout.m */; };
+		43916EED133FEAF100E41540 /* NMExplicitLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33BF133FE95D002C3384 /* NMExplicitLayout.m */; };
 		43916EEE133FEAF100E41540 /* NMViewLayoutOmitSubviewsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33C1133FE95D002C3384 /* NMViewLayoutOmitSubviewsView.m */; };
 		43916EEF133FEAF100E41540 /* NMViewLayoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33C3133FE95D002C3384 /* NMViewLayoutView.m */; };
 		43916EF0133FEAF100E41540 /* NMView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33C5133FE95D002C3384 /* NMView.m */; };
@@ -94,7 +94,7 @@
 		43916F18133FEB1900E41540 /* NMViewAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* NMViewAppDelegate.m */; };
 		43916F19133FEB1900E41540 /* UIImage+NMNSCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33BA133FE95D002C3384 /* UIImage+NMNSCoding.m */; };
 		43916F1A133FEB1900E41540 /* UIView+NMTemplating.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33BC133FE95D002C3384 /* UIView+NMTemplating.m */; };
-		43916F1B133FEB1900E41540 /* NMViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33BF133FE95D002C3384 /* NMViewLayout.m */; };
+		43916F1B133FEB1900E41540 /* NMExplicitLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33BF133FE95D002C3384 /* NMExplicitLayout.m */; };
 		43916F1C133FEB1900E41540 /* NMViewLayoutOmitSubviewsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33C1133FE95D002C3384 /* NMViewLayoutOmitSubviewsView.m */; };
 		43916F1D133FEB1900E41540 /* NMViewLayoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33C3133FE95D002C3384 /* NMViewLayoutView.m */; };
 		43916F1E133FEB1900E41540 /* NMView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33C5133FE95D002C3384 /* NMView.m */; };
@@ -128,7 +128,7 @@
 		43916F46133FEB4300E41540 /* NMViewAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* NMViewAppDelegate.m */; };
 		43916F47133FEB4300E41540 /* UIImage+NMNSCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33BA133FE95D002C3384 /* UIImage+NMNSCoding.m */; };
 		43916F48133FEB4300E41540 /* UIView+NMTemplating.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33BC133FE95D002C3384 /* UIView+NMTemplating.m */; };
-		43916F49133FEB4300E41540 /* NMViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33BF133FE95D002C3384 /* NMViewLayout.m */; };
+		43916F49133FEB4300E41540 /* NMExplicitLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33BF133FE95D002C3384 /* NMExplicitLayout.m */; };
 		43916F4A133FEB4300E41540 /* NMViewLayoutOmitSubviewsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33C1133FE95D002C3384 /* NMViewLayoutOmitSubviewsView.m */; };
 		43916F4B133FEB4300E41540 /* NMViewLayoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33C3133FE95D002C3384 /* NMViewLayoutView.m */; };
 		43916F4C133FEB4300E41540 /* NMView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33C5133FE95D002C3384 /* NMView.m */; };
@@ -153,9 +153,19 @@
 		43916F7B133FEBF200E41540 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 43916F78133FEBF200E41540 /* Icon-72.png */; };
 		43916F7C133FEBF200E41540 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 43916F78133FEBF200E41540 /* Icon-72.png */; };
 		43916F7D133FEBF200E41540 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 43916F78133FEBF200E41540 /* Icon-72.png */; };
+		439FC4F413BBCBC400D488AD /* NMViewLayoutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 439FC4F313BBCBC400D488AD /* NMViewLayoutManager.m */; };
+		439FC4F513BBCBC400D488AD /* NMViewLayoutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 439FC4F313BBCBC400D488AD /* NMViewLayoutManager.m */; };
+		439FC4F613BBCBC400D488AD /* NMViewLayoutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 439FC4F313BBCBC400D488AD /* NMViewLayoutManager.m */; };
+		439FC4F713BBCBC400D488AD /* NMViewLayoutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 439FC4F313BBCBC400D488AD /* NMViewLayoutManager.m */; };
+		439FC4F813BBCBC400D488AD /* NMViewLayoutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 439FC4F313BBCBC400D488AD /* NMViewLayoutManager.m */; };
+		439FC4FB13BBCC4900D488AD /* NMExplicitLayoutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 439FC4FA13BBCC4900D488AD /* NMExplicitLayoutManager.m */; };
+		439FC4FC13BBCC4900D488AD /* NMExplicitLayoutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 439FC4FA13BBCC4900D488AD /* NMExplicitLayoutManager.m */; };
+		439FC4FD13BBCC4900D488AD /* NMExplicitLayoutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 439FC4FA13BBCC4900D488AD /* NMExplicitLayoutManager.m */; };
+		439FC4FE13BBCC4900D488AD /* NMExplicitLayoutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 439FC4FA13BBCC4900D488AD /* NMExplicitLayoutManager.m */; };
+		439FC4FF13BBCC4900D488AD /* NMExplicitLayoutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 439FC4FA13BBCC4900D488AD /* NMExplicitLayoutManager.m */; };
 		43AC33C6133FE95D002C3384 /* UIImage+NMNSCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33BA133FE95D002C3384 /* UIImage+NMNSCoding.m */; };
 		43AC33C7133FE95D002C3384 /* UIView+NMTemplating.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33BC133FE95D002C3384 /* UIView+NMTemplating.m */; };
-		43AC33C8133FE95D002C3384 /* NMViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33BF133FE95D002C3384 /* NMViewLayout.m */; };
+		43AC33C8133FE95D002C3384 /* NMExplicitLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33BF133FE95D002C3384 /* NMExplicitLayout.m */; };
 		43AC33C9133FE95D002C3384 /* NMViewLayoutOmitSubviewsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33C1133FE95D002C3384 /* NMViewLayoutOmitSubviewsView.m */; };
 		43AC33CA133FE95D002C3384 /* NMViewLayoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33C3133FE95D002C3384 /* NMViewLayoutView.m */; };
 		43AC33CB133FE95D002C3384 /* NMView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC33C5133FE95D002C3384 /* NMView.m */; };
@@ -199,12 +209,16 @@
 		43916F63133FEB4300E41540 /* ViewTemplates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewTemplates.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43916F78133FEBF200E41540 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
 		43916FC6133FEEF100E41540 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
+		439FC4F213BBCBC400D488AD /* NMViewLayoutManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMViewLayoutManager.h; sourceTree = "<group>"; };
+		439FC4F313BBCBC400D488AD /* NMViewLayoutManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMViewLayoutManager.m; sourceTree = "<group>"; };
+		439FC4F913BBCC4900D488AD /* NMExplicitLayoutManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMExplicitLayoutManager.h; sourceTree = "<group>"; };
+		439FC4FA13BBCC4900D488AD /* NMExplicitLayoutManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMExplicitLayoutManager.m; sourceTree = "<group>"; };
 		43AC33B9133FE95D002C3384 /* UIImage+NMNSCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+NMNSCoding.h"; sourceTree = "<group>"; };
 		43AC33BA133FE95D002C3384 /* UIImage+NMNSCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+NMNSCoding.m"; sourceTree = "<group>"; };
 		43AC33BB133FE95D002C3384 /* UIView+NMTemplating.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+NMTemplating.h"; sourceTree = "<group>"; };
 		43AC33BC133FE95D002C3384 /* UIView+NMTemplating.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+NMTemplating.m"; sourceTree = "<group>"; };
-		43AC33BE133FE95D002C3384 /* NMViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMViewLayout.h; sourceTree = "<group>"; };
-		43AC33BF133FE95D002C3384 /* NMViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMViewLayout.m; sourceTree = "<group>"; };
+		43AC33BE133FE95D002C3384 /* NMExplicitLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMExplicitLayout.h; sourceTree = "<group>"; };
+		43AC33BF133FE95D002C3384 /* NMExplicitLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMExplicitLayout.m; sourceTree = "<group>"; };
 		43AC33C0133FE95D002C3384 /* NMViewLayoutOmitSubviewsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMViewLayoutOmitSubviewsView.h; sourceTree = "<group>"; };
 		43AC33C1133FE95D002C3384 /* NMViewLayoutOmitSubviewsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMViewLayoutOmitSubviewsView.m; sourceTree = "<group>"; };
 		43AC33C2133FE95D002C3384 /* NMViewLayoutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMViewLayoutView.h; sourceTree = "<group>"; };
@@ -386,6 +400,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		439FC4D813BBCA3900D488AD /* Explicit Layout */ = {
+			isa = PBXGroup;
+			children = (
+				43AC33BE133FE95D002C3384 /* NMExplicitLayout.h */,
+				43AC33BF133FE95D002C3384 /* NMExplicitLayout.m */,
+				439FC4F913BBCC4900D488AD /* NMExplicitLayoutManager.h */,
+				439FC4FA13BBCC4900D488AD /* NMExplicitLayoutManager.m */,
+				43AC33C0133FE95D002C3384 /* NMViewLayoutOmitSubviewsView.h */,
+				43AC33C1133FE95D002C3384 /* NMViewLayoutOmitSubviewsView.m */,
+				43AC33C2133FE95D002C3384 /* NMViewLayoutView.h */,
+				43AC33C3133FE95D002C3384 /* NMViewLayoutView.m */,
+			);
+			name = "Explicit Layout";
+			sourceTree = "<group>";
+		};
 		43AC33B7133FE95D002C3384 /* NMView */ = {
 			isa = PBXGroup;
 			children = (
@@ -411,12 +440,9 @@
 		43AC33BD133FE95D002C3384 /* Layouting */ = {
 			isa = PBXGroup;
 			children = (
-				43AC33BE133FE95D002C3384 /* NMViewLayout.h */,
-				43AC33BF133FE95D002C3384 /* NMViewLayout.m */,
-				43AC33C0133FE95D002C3384 /* NMViewLayoutOmitSubviewsView.h */,
-				43AC33C1133FE95D002C3384 /* NMViewLayoutOmitSubviewsView.m */,
-				43AC33C2133FE95D002C3384 /* NMViewLayoutView.h */,
-				43AC33C3133FE95D002C3384 /* NMViewLayoutView.m */,
+				439FC4D813BBCA3900D488AD /* Explicit Layout */,
+				439FC4F213BBCBC400D488AD /* NMViewLayoutManager.h */,
+				439FC4F313BBCBC400D488AD /* NMViewLayoutManager.m */,
 			);
 			name = Layouting;
 			sourceTree = "<group>";
@@ -728,7 +754,7 @@
 				1D3623260D0F684500981E51 /* NMViewAppDelegate.m in Sources */,
 				43AC33C6133FE95D002C3384 /* UIImage+NMNSCoding.m in Sources */,
 				43AC33C7133FE95D002C3384 /* UIView+NMTemplating.m in Sources */,
-				43AC33C8133FE95D002C3384 /* NMViewLayout.m in Sources */,
+				43AC33C8133FE95D002C3384 /* NMExplicitLayout.m in Sources */,
 				43AC33C9133FE95D002C3384 /* NMViewLayoutOmitSubviewsView.m in Sources */,
 				43AC33CA133FE95D002C3384 /* NMViewLayoutView.m in Sources */,
 				43AC33CB133FE95D002C3384 /* NMView.m in Sources */,
@@ -742,6 +768,8 @@
 				43AC33FE133FE98A002C3384 /* AutomaticLayoutChangesView.m in Sources */,
 				43AC3400133FE98A002C3384 /* ViewTemplatesController.m in Sources */,
 				43AC3402133FE98A002C3384 /* ViewTemplatesView.m in Sources */,
+				439FC4F413BBCBC400D488AD /* NMViewLayoutManager.m in Sources */,
+				439FC4FB13BBCC4900D488AD /* NMExplicitLayoutManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -753,7 +781,7 @@
 				43916EB4133FEAB300E41540 /* NMViewAppDelegate.m in Sources */,
 				43916EB5133FEAB300E41540 /* UIImage+NMNSCoding.m in Sources */,
 				43916EB6133FEAB300E41540 /* UIView+NMTemplating.m in Sources */,
-				43916EB7133FEAB300E41540 /* NMViewLayout.m in Sources */,
+				43916EB7133FEAB300E41540 /* NMExplicitLayout.m in Sources */,
 				43916EB8133FEAB300E41540 /* NMViewLayoutOmitSubviewsView.m in Sources */,
 				43916EB9133FEAB300E41540 /* NMViewLayoutView.m in Sources */,
 				43916EBA133FEAB300E41540 /* NMView.m in Sources */,
@@ -767,6 +795,8 @@
 				43916EC2133FEAB300E41540 /* AutomaticLayoutChangesView.m in Sources */,
 				43916EC3133FEAB300E41540 /* ViewTemplatesController.m in Sources */,
 				43916EC4133FEAB300E41540 /* ViewTemplatesView.m in Sources */,
+				439FC4F613BBCBC400D488AD /* NMViewLayoutManager.m in Sources */,
+				439FC4FD13BBCC4900D488AD /* NMExplicitLayoutManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -778,7 +808,7 @@
 				43916EEA133FEAF100E41540 /* NMViewAppDelegate.m in Sources */,
 				43916EEB133FEAF100E41540 /* UIImage+NMNSCoding.m in Sources */,
 				43916EEC133FEAF100E41540 /* UIView+NMTemplating.m in Sources */,
-				43916EED133FEAF100E41540 /* NMViewLayout.m in Sources */,
+				43916EED133FEAF100E41540 /* NMExplicitLayout.m in Sources */,
 				43916EEE133FEAF100E41540 /* NMViewLayoutOmitSubviewsView.m in Sources */,
 				43916EEF133FEAF100E41540 /* NMViewLayoutView.m in Sources */,
 				43916EF0133FEAF100E41540 /* NMView.m in Sources */,
@@ -792,6 +822,8 @@
 				43916EF8133FEAF100E41540 /* AutomaticLayoutChangesView.m in Sources */,
 				43916EF9133FEAF100E41540 /* ViewTemplatesController.m in Sources */,
 				43916EFA133FEAF100E41540 /* ViewTemplatesView.m in Sources */,
+				439FC4F813BBCBC400D488AD /* NMViewLayoutManager.m in Sources */,
+				439FC4FF13BBCC4900D488AD /* NMExplicitLayoutManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -803,7 +835,7 @@
 				43916F18133FEB1900E41540 /* NMViewAppDelegate.m in Sources */,
 				43916F19133FEB1900E41540 /* UIImage+NMNSCoding.m in Sources */,
 				43916F1A133FEB1900E41540 /* UIView+NMTemplating.m in Sources */,
-				43916F1B133FEB1900E41540 /* NMViewLayout.m in Sources */,
+				43916F1B133FEB1900E41540 /* NMExplicitLayout.m in Sources */,
 				43916F1C133FEB1900E41540 /* NMViewLayoutOmitSubviewsView.m in Sources */,
 				43916F1D133FEB1900E41540 /* NMViewLayoutView.m in Sources */,
 				43916F1E133FEB1900E41540 /* NMView.m in Sources */,
@@ -817,6 +849,8 @@
 				43916F26133FEB1900E41540 /* AutomaticLayoutChangesView.m in Sources */,
 				43916F27133FEB1900E41540 /* ViewTemplatesController.m in Sources */,
 				43916F28133FEB1900E41540 /* ViewTemplatesView.m in Sources */,
+				439FC4F513BBCBC400D488AD /* NMViewLayoutManager.m in Sources */,
+				439FC4FC13BBCC4900D488AD /* NMExplicitLayoutManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -828,7 +862,7 @@
 				43916F46133FEB4300E41540 /* NMViewAppDelegate.m in Sources */,
 				43916F47133FEB4300E41540 /* UIImage+NMNSCoding.m in Sources */,
 				43916F48133FEB4300E41540 /* UIView+NMTemplating.m in Sources */,
-				43916F49133FEB4300E41540 /* NMViewLayout.m in Sources */,
+				43916F49133FEB4300E41540 /* NMExplicitLayout.m in Sources */,
 				43916F4A133FEB4300E41540 /* NMViewLayoutOmitSubviewsView.m in Sources */,
 				43916F4B133FEB4300E41540 /* NMViewLayoutView.m in Sources */,
 				43916F4C133FEB4300E41540 /* NMView.m in Sources */,
@@ -842,6 +876,8 @@
 				43916F54133FEB4300E41540 /* AutomaticLayoutChangesView.m in Sources */,
 				43916F55133FEB4300E41540 /* ViewTemplatesController.m in Sources */,
 				43916F56133FEB4300E41540 /* ViewTemplatesView.m in Sources */,
+				439FC4F713BBCBC400D488AD /* NMViewLayoutManager.m in Sources */,
+				439FC4FE13BBCC4900D488AD /* NMExplicitLayoutManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
