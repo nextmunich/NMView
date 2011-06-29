@@ -19,19 +19,6 @@
 @synthesize currentLayout;
 
 
-#pragma mark Public API
-
-- (void)addExplicitLayoutAlternative:(UIView *)alternative forView:(UIView *)original {
-	if (alternative == original
-		|| alternative.tag == NMViewLayoutTag
-		|| [alternative isKindOfClass:[NMViewLayoutView class]]) {
-	
-		[layouts addObject:[NMExplicitLayout layoutForView:original
-									   withAlternativeView:alternative]];
-	}
-}
-
-
 #pragma mark Layouting
 
 - (BOOL)layoutSubviews:(UIView *)view {
@@ -53,6 +40,19 @@
 		return YES;
 	} else {
 		return NO;
+	}
+}
+
+
+#pragma mark Public API
+
+- (void)addExplicitLayoutAlternative:(UIView *)alternative forView:(UIView *)original {
+	if (alternative == original
+		|| alternative.tag == NMViewLayoutTag
+		|| [alternative isKindOfClass:[NMViewLayoutView class]]) {
+	
+		[layouts addObject:[NMExplicitLayout layoutForView:original
+									   withAlternativeView:alternative]];
 	}
 }
 
