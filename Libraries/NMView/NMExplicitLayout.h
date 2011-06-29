@@ -1,5 +1,5 @@
 //
-//  NMViewLayout.h
+//  NMExplicitLayout.h
 //  NMView
 //
 //  Created by Benjamin Broll on 18.02.11.
@@ -42,7 +42,7 @@
 #define NMViewLayoutOmitSubviewsTag 66769
 
 
-@interface NMViewLayout : NSObject {
+@interface NMExplicitLayout : NSObject {
 	
 	CGRect alternativeBaseFrame;
 	UIView *baseView;
@@ -53,7 +53,7 @@
 @property (nonatomic, readonly) CGFloat aspectRatio;
 @property (nonatomic, readonly) CGRect alternativeBaseFrame;
 
-+ (NMViewLayout *)layoutForView:(UIView *)original
++ (NMExplicitLayout *)layoutForView:(UIView *)original
 			withAlternativeView:(UIView *)alternative;
 
 - (void)applyToView:(UIView *)view;

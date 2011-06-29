@@ -47,6 +47,7 @@
 @synthesize loadFromNIBController;
 @synthesize layoutSupportController;
 @synthesize automaticLayoutChangesController;
+@synthesize gridLayoutController;
 @synthesize viewTemplatesController;
 
 
@@ -65,6 +66,8 @@
 	[window addSubview:layoutSupportController.view];
 #elif AUTOMATIC_LAYOUT_CHANGES
 	[window addSubview:automaticLayoutChangesController.view];
+#elif GRID_LAYOUT
+	[window addSubview:gridLayoutController.view];
 #elif VIEW_TEMPLATES
 	[window addSubview:viewTemplatesController.view];
 #endif
@@ -80,6 +83,7 @@
     [loadFromNIBController release];
     [layoutSupportController release];
     [automaticLayoutChangesController release];
+	[gridLayoutController release];
     [viewTemplatesController release];
     [window release];
 	
