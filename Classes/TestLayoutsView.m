@@ -37,15 +37,23 @@
 
 #import "TestLayoutsView.h"
 
+#import "NMExplicitLayout.h"
+#import "NMExplicitLayoutManager.h"
+
+
 #define TEXT_TAG 1001
 
 @implementation TestLayoutsView
 
 
-- (void)layoutDidChangeToAspectRatio:(CGFloat)aspectRatio {
+- (void)layoutDidChange {
 	// Apply post processing after a new layout has been applied.
-	UILabel *lbl = (UILabel *)[self viewWithTag:TEXT_TAG];
-	lbl.text = [NSString stringWithFormat:@"%f", aspectRatio];
+	if ([self.layoutManager isKindOfClass:[NMExplicitLayoutManager class]]) {
+		NMExplicitLayoutManager *mgr = (NMExplicitLayoutManager *)self.layoutManager;
+		
+		UILabel *lbl = (UILabel *)[self viewWithTag:TEXT_TAG];
+		lbl.text = [NSString stringWithFormat:@"%f", mgr.currentLayout.aspectRatio];
+	}
 }
 
 @end

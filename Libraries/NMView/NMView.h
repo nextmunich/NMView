@@ -37,6 +37,8 @@
 
 #import <UIKit/UIKit.h>
 
+@class NMViewLayoutManager;
+
 
 /**
  * The NMView class allows the creation of custom UIView subclasses using nib
@@ -123,7 +125,7 @@
 
 @private
 	
-	NSMutableArray *layouts;
+	NMViewLayoutManager *layoutManager;
 	BOOL automaticLayoutChangeEnabled;
 	
 }
@@ -209,6 +211,8 @@
 #define AspectRatioIsVertical(aspectRatio) ((aspectRatio) < 1)
 #define AspectRatioIsSquare(aspectRatio) ((aspectRatio) == 1)
 
+@property (nonatomic, retain) IBOutlet NMViewLayoutManager *layoutManager;
+
 /**
  * Enables automatic layout changes whenever -layoutSubviews is called. The
  * default value is NO.
@@ -230,6 +234,6 @@
  * Override this method to dynamically adapt to the layout change. This method
  * should not be called by users of NMView and is only meant for subclassing.
  */
-- (void)layoutDidChangeToAspectRatio:(CGFloat)aspectRatio;
+- (void)layoutDidChange;
 
 @end

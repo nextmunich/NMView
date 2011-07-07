@@ -45,6 +45,7 @@
 	UIViewController *loadFromNIBController;
 	UIViewController *layoutSupportController;
 	UIViewController *automaticLayoutChangesController;
+	UIViewController *gridLayoutController;
 	UIViewController *viewTemplatesController;
 	
 }
@@ -55,6 +56,7 @@
 @property (nonatomic, retain) IBOutlet UIViewController *loadFromNIBController;
 @property (nonatomic, retain) IBOutlet UIViewController *layoutSupportController;
 @property (nonatomic, retain) IBOutlet UIViewController *automaticLayoutChangesController;
+@property (nonatomic, retain) IBOutlet UIViewController *gridLayoutController;
 @property (nonatomic, retain) IBOutlet UIViewController *viewTemplatesController;
 
 @end

@@ -37,8 +37,8 @@
 
 #import "NMView.h"
 
-#import "NMViewLayout.h"
-#import "NMViewLayoutView.h"
+#import "NMViewLayoutManager.h"
+#import "NMExplicitLayoutManager.h"
 #import "UIView+NMTemplating.h"
 
 
@@ -46,15 +46,13 @@
 
 #pragma mark Properties
 
+@synthesize layoutManager;
 @synthesize automaticLayoutChangeEnabled;
 
 
 #pragma mark Methods to be overridden by subclasses
 
 - (void)loadViewWithNibName:(NSString *)nibName bundle:(NSBundle *)bundle {
-	// 0. Initialize
-	layouts = [[NSMutableArray alloc] init];
-	
 	// 1. check for nil values and use default values, if necessary
 	if (nibName == nil) nibName = NSStringFromClass([self class]);
 	if (bundle == nil) bundle = [NSBundle mainBundle];
@@ -66,6 +64,8 @@
 		// 2a. try to load from nib
 		NSArray *nibContent = [bundle loadNibNamed:nibName owner:self options:nil];
 		if (nibContent != nil) {
+			BOOL layoutManagerWasLoadedFromNib = (self.layoutManager != nil);
+			
 			for (NSUInteger i = 0; i < [nibContent count]; i++) {
 				NSObject *object = [nibContent objectAtIndex:i];
 				
@@ -75,14 +75,25 @@
 					if (!viewLoadedFromNib) {
 						// apply nib template to current view
 						[self applyViewTemplateByCopyingHierarchy:view];
-						[layouts addObject:[NMViewLayout layoutForView:self
-												   withAlternativeView:self]];
-						
 						viewLoadedFromNib = YES;
-					} else if (view.tag == NMViewLayoutTag
-							   || [view isKindOfClass:[NMViewLayoutView class]]) {
-						[layouts addObject:[NMViewLayout layoutForView:self
-												   withAlternativeView:view]];
+					} else if (!layoutManagerWasLoadedFromNib) {
+						// automatic use of explicit layout manager since
+						// a. multiple top-level views have been defined in the
+						// nib
+						// b. no layout manager was set in the nib
+						
+						if (self.layoutManager == nil) {
+							// lazily initialize layout manager
+							NMExplicitLayoutManager *mgr = [[[NMExplicitLayoutManager alloc] init] autorelease];
+							self.layoutManager = mgr;
+							
+							// treat the original view layout as one of the
+							// explicit layouts
+							[mgr addExplicitLayoutAlternative:self forView:self];
+						}
+						
+						NMExplicitLayoutManager *mgr = (NMExplicitLayoutManager *)self.layoutManager;
+						[mgr addExplicitLayoutAlternative:view forView:self];
 					}
 				}
 			}
@@ -112,25 +123,15 @@
 }
 
 - (void)changeLayoutIfNecessary {
-	CGFloat aspectRatio = self.bounds.size.width/self.bounds.size.height;
-	CGFloat smallestDifference = 100;
-	NMViewLayout *closestLayout = nil;
-	
-	for (NMViewLayout *layout in layouts) {
-		if (ABS(layout.aspectRatio-aspectRatio) < smallestDifference) {
-			smallestDifference = ABS(layout.aspectRatio-aspectRatio);
-			closestLayout = layout;
+	if (self.layoutManager != nil) {
+		BOOL managerDidChangeLayout = [self.layoutManager layoutSubviews:self];
+		if (managerDidChangeLayout) {
+			[self layoutDidChange];
 		}
-	}
-	
-	
-	if (closestLayout != nil) {
-		[closestLayout applyToView:self];
-		[self layoutDidChangeToAspectRatio:closestLayout.aspectRatio];
 	}
 }
 
-- (void)layoutDidChangeToAspectRatio:(CGFloat)aspectRatio { }
+- (void)layoutDidChange { }
 
 
 #pragma mark Init
@@ -188,7 +189,7 @@
 }
 
 - (void)dealloc {
-	[layouts release];
+	self.layoutManager = nil;
 	
 	[super dealloc];
 }

@@ -1,5 +1,5 @@
 //
-//  NMViewLayout.m
+//  NMExplicitLayout.m
 //  NMView
 //
 //  Created by Benjamin Broll on 18.02.11.
@@ -35,7 +35,7 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#import "NMViewLayout.h"
+#import "NMExplicitLayout.h"
 
 #import "NMViewLayoutOmitSubviewsView.h"
 #import "NMViewLayoutView.h"
@@ -80,7 +80,7 @@
 #pragma mark -
 #pragma mark NMViewLayout Implementation
 
-@implementation NMViewLayout
+@implementation NMExplicitLayout
 
 @synthesize alternativeBaseFrame;
 
@@ -150,10 +150,10 @@
 }
 
 
-+ (NMViewLayout *)layoutForView:(UIView *)original
++ (NMExplicitLayout *)layoutForView:(UIView *)original
 			withAlternativeView:(UIView *)alternative {
 	
-	NMViewLayout *layout = [[[NMViewLayout alloc] init] autorelease];
+	NMExplicitLayout *layout = [[[NMExplicitLayout alloc] init] autorelease];
 	layout->alternativeBaseFrame = alternative.frame;
 	layout->baseView = original;
 	
