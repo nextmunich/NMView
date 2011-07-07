@@ -114,7 +114,13 @@
 - (void)applyToView:(UIView *)view {
 	if (view != baseView) {
 		NMViewLayoutConfiguration *config = [self configurationForView:view];
-		view.frame = config.frame;
+		
+		// setting center and bounds instead of frame because the view might be
+		// using a transform so that setting the frame is not a valid operation
+		view.center = CGPointMake(config.frame.origin.x+config.frame.size.width/2,
+								  config.frame.origin.y+config.frame.size.height/2);
+		view.bounds = CGRectMake(0, 0, config.frame.size.width, config.frame.size.height);
+		
 		//view.alpha = config.alpha;
 		//view.autoresizingMask = config.autoresizingMask;
 	}
