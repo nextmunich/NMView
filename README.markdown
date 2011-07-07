@@ -1,3 +1,10 @@
+# Latest Changes
+
+- Refactored NMView to support formalized layout management and provided NMExplicitLayoutManager and
+  NMGridLayoutManager as initial samples for custom layout managers. NMExplicitLayoutManager
+  is the default layouting behavior of an NMView.
+
+
 # Introduction
 
 Apple has gone a long way making it easy for iOS developers to create complex UIs, thanks to
@@ -63,6 +70,22 @@ take:
    defined it to look in your nib file
    
 The sample "Load From NIB" showcases this.
+
+## Layout Managers
+
+Previously, NMView only supported a single means of updating the view's contents based on a change
+of the view's bounds: using alternative layouts defined in the nib that the NMView was loaded from.
+Now, this managements of alternative layouts has been formalized into NMViewLayoutManager and its
+subclass NMExplicitLayoutManager.
+
+Additionally, another NMViewLayoutManager subclass has been created which facilitates layouting the
+subviews of an NMView into a grid structure.
+
+Layout managers themselves are objects that are not dependent on NMView and can be re-used in
+different scenarios.
+
+
+# About Explicit Layouts
 
 ## What's in a layout and how can we use it
 
