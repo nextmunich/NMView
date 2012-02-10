@@ -39,9 +39,8 @@
 
 
 /**
- * A class which serves only as a marker in Interface Builder to identify the
- * views for which the layout should omit subviews and not re-layout their
- * subviews.
+ * A class which serves as a marker in Interface Builder to identify the
+ * views for which NMExplicitLayoutManager should not re-layout their subviews.
  */
 @interface NMViewLayoutOmitSubviewsView : UIView {
 
