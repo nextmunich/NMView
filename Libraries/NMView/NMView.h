@@ -53,7 +53,7 @@
  * the layout in a nib file and load the view with its layout during its
  * initialization.
  *
- * 1. View layouts using nib files
+ * ## View layouts using nib files
  *
  * NMView provides a default implementation of the -loadViewWithNibName:bundle:
  * method which is used to load the view's layout from a nib file. The
@@ -86,15 +86,15 @@
  * in Interface Builder.
  *
  * One obvious thing to point out: since NMView (and its subclasses) directly
- * inherits from UIView, its view is loaded during initialization for whole
- * lifetime of an instance of the class. This is in contrast to a
+ * inherits from UIView, its view is loaded during initialization for the whole
+ * lifetime of the instance. This is in contrast to a
  * UIViewController where the controller can exist without the associated view
  * (ie. -initWithNibName:bundle: on UIViewController does *not* load the view).
  * Therefore, for NMView, -viewDidLoad is always called exactly once during the
  * lifetime of an NMView instance whereas a UIViewController's -viewDidLoad
  * might be called multiple times.
  *
- * 2. Alternative layouts
+ * ## Alternative layouts
  *
  * On top of loading the view's layout from a nib file, NMView also supports
  * alternative layouts that can be activated based on the current bounds of the
@@ -107,7 +107,7 @@
  * automaticLayoutChangeEnabled property to YES. In that case, each call to
  * -layoutSubviews automatically calls -changeLayoutIfNecessary.
  *
- * Once a layout has been applied, the -layoutDidChangeToAspectRatio: method is
+ * Once a layout has been applied, the -layoutDidChange method is
  * called to allow the NMView subclass to perform some post-processing on the
  * new layout. In this method you can, for example, apply modifications to your
  * layout that you cannot define in IB (like change the transform of one of the
@@ -136,6 +136,10 @@
 
 #pragma mark View Loading
 
+/// ----------------------
+/// @name Initialization
+/// ----------------------
+
 /**
  * Initializes a new view object by first calling -initWithFrame: of UIView with
  * a default CGRect and subsequently trying to load the view by calling
@@ -155,6 +159,9 @@
  * After the view has been loaded from the nib, the view's frame is reset to the
  * parameter passed into the method, overriding the frame that was set in the
  * view's nib.
+ *
+ * @param frame The frame applied to the view after it has been loaded. The
+ *              returned view will always have this frame set.
  */
 - (id)initWithFrame:(CGRect)frame;
 
@@ -163,11 +170,21 @@
  *
  * This method calls -loadViewWithNibName:bundle: to perform the actual view
  * loading.
+ *
+ * @param nibName The name of the nib file from which the view should be loaded.
+ *                Can be nil to indicate that the class' name should be used for
+ *                the nib name. The name must be passed without extension.
+ * @param nibBundle The bundle from which the nib file should be loaded. Can be
+ *                  nil to indicate that the main bundle should be used.
  */
 - (id)initWithNibName:(NSString *)nibName bundle:(NSBundle *)nibBundle;
 
+/// --------------------
+/// @name View Loading
+/// --------------------
+
 /**
- * Loads the View's properties from the given nib file.
+ * Loads the view's properties from the given nib file.
  *
  * If nibBundle is nil, [NSBundle mainBundle] is used for loading the nib.
  * If nibName is nil, we're trying to load a nib with the name of the current
@@ -180,18 +197,27 @@
  * If no nib could be found, the -createView method is called as a last resort
  * to construct the view programatically.
  *
- * Override this method to provide your own loading strategy. This method should
- * not be called by users of NMView and is only meant for subclassing.
+ * Override this method to provide your own loading strategy.
+ *
+ * @warning This method should not be called by users of NMView and is only
+ *          meant for subclassing.
+ *
+ * @param nibName The name of the nib file from which the view should be loaded.
+ *                Can be nil to indicate that the class' name should be used for
+ *                the nib name. The name must be passed without extension.
+ * @param nibBundle The bundle from which the nib file should be loaded. Can be
+ *                  nil to indicate that the main bundle should be used.
  */
 - (void)loadViewWithNibName:(NSString *)nibName bundle:(NSBundle *)nibBundle;
 
 /**
  * Programmatically creates the view and its hierarchy.
  *
- * Override this method to create your custom view subclass. This method should
- * not be called by users of NMView and is only meant for subclassing.
+ * Override this method to create your custom view subclass. The default
+ * implementation does nothing.
  *
- * The default implementation does nothing.
+ * @warning This method should not be called by users of NMView and is only meant
+ *          for subclassing.
  */
 - (void)createView;
 
@@ -200,20 +226,29 @@
  * method.
  *
  * Override this method to perform any view customization when loading did
- * finish. This method should not be called by users of NMView and is only meant
- * for subclassing.
- *
- * The default implementation does nothing.
+ * finish. The default implementation does nothing.
+ * 
+ * @warning This method should not be called by users of NMView and is only meant
+ *          for subclassing.
  */
 - (void)viewDidLoad;
 
 
 #pragma mark Layout Management
 
-#define AspectRatioIsHorizontal(aspectRatio) ((aspectRatio) > 1)
-#define AspectRatioIsVertical(aspectRatio) ((aspectRatio) < 1)
-#define AspectRatioIsSquare(aspectRatio) ((aspectRatio) == 1)
+/// -------------------------
+/// @name Layout Management
+/// -------------------------
 
+/**
+ * Sets the NMViewLayoutManager that is used to change the view's layout in
+ * response to a call to -changeLayoutIfNecessary.
+ *
+ * The layout manager is nil by default. If the view is loaded from a nib which
+ * includes alternative layouts, NMExplicitLayoutManager is set as the layout
+ * manager and will automatically be configured with the view's alternative
+ * layouts.
+ */
 @property (nonatomic, retain) IBOutlet NMViewLayoutManager *layoutManager;
 
 /**
@@ -223,10 +258,10 @@
 @property (nonatomic, assign) BOOL automaticLayoutChangeEnabled;
 
 /**
- * Called to ask the view to update its layout based on the aspect ratio of the
- * view's bounds. If the current layout is the best layout available given the
- * current aspect ratio, no change is performed but
- * -layoutDidChangeToAspectRatio: will still be invoked.
+ * Called to ask the view to update its layout using the NMViewLayoutManager
+ * assigned to layoutManager. In case the NMViewLayoutManager indicates that
+ * the layout was changed, the -layoutDidChange method will be invoked to
+ * allow subclasses to react to the layout change.
  */
 - (void)changeLayoutIfNecessary;
 
@@ -234,8 +269,10 @@
  * Called after the layout of a view was changed during a call to
  * -changeLayoutIfNecessary to better match the current aspect ratio.
  *
- * Override this method to dynamically adapt to the layout change. This method
- * should not be called by users of NMView and is only meant for subclassing.
+ * Override this method to dynamically adapt to the layout change.
+ *
+ * @warning This method should not be called by users of NMView and is only meant
+ *          for subclassing.
  */
 - (void)layoutDidChange;
 

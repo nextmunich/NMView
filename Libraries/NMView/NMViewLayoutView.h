@@ -39,8 +39,8 @@
 
 
 /**
- * A class which serves only as a marker in Interface Builder to identify the
- * views which should be used as layouts for the NMView.
+ * A class which serves as a marker in Interface Builder to identify the
+ * views which should be used as alternative layouts for an NMView.
  */
 @interface NMViewLayoutView : UIView {
 
