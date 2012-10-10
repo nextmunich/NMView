@@ -6,7 +6,7 @@
 //  Copyright 2011 NEXT Munich GmbH. The App Agency. All rights reserved.
 //
 
-#define NMVIEW_VERSION @"1.1.1"
+#define NMVIEW_VERSION @"1.1.2"
 
 
 /*
