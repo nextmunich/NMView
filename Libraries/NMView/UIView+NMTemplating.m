@@ -74,7 +74,7 @@
 }
 
 
-- (UIView *)copyView {
+- (UIView *)createCopyOfView {
 	if ([self respondsToSelector:@selector(encodeWithCoder:)]) {
 		NSMutableData *data = [[NSMutableData alloc] init];
 		
@@ -103,7 +103,7 @@
 	 
 	// Re-Create subview structure
 	for (UIView *subview in view.subviews) {
-		UIView *copy = [subview copyView];
+		UIView *copy = [subview createCopyOfView];
 		[self addSubview:copy];
 	}
 }

@@ -4,3 +4,10 @@ build
 # User-specific files
 *.pbxuser
 *.mode1v3
+
+# Xcode 4
+*.xcworkspace
+xcuserdata
+
+# Mac OS X
+.DS_Store
