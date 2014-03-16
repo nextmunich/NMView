@@ -42,6 +42,11 @@
 
 @implementation UIImage (NMNSCoding)
 
+// These pragmas are used to disable the warnings indicating that we're overriding the
+// -initWithCoder: / -encodeWithCoder: methods using a category.
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wobjc-protocol-method-implementation"
+
 - (id)initWithCoder:(NSCoder *)decoder
 {
     if ((self = [super init]))
@@ -57,5 +62,7 @@
     NSData *data = UIImagePNGRepresentation(self);
     [encoder encodeObject:data forKey:kEncodingKey];
 }
+
+#pragma clang diagnostic pop
 
 @end
